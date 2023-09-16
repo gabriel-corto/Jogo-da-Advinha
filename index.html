@@ -1,0 +1,45 @@
+<!DOCTYPE html />
+<html lang="en" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jogo da Advinha" />
+  <title>Jogo da Advinha !</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="App">
+    <header class="title">
+      <h1> <i class="fa-solid fa-laptop"></i> Jogo da Advinha</h1>
+    </head>
+
+    <section id="content">
+      <h3>O Computador Sorteiou um Número entre (0) até (10) Tente Advinhar !!!!!</h3>
+    </section>
+
+    <form id="select-number">
+      <div class="form-item input">
+        <input 
+          id="number"
+          autofocus
+          type="number" 
+          placeholder="Exemplo: 9" 
+          title="Coloque Um Número">
+      </div>
+      <div class="form-item controls">
+        <button class="buttonPlay" title="Continuar" type="submit"><i class="fa-solid fa-gamepad"></i> JOGAR</button>
+      </div>
+    </form>
+  </main>
+
+  <div id="game-message" class="Hiden">
+    <h2 class="title">
+      <span><i class="fa-solid fa-warning"></i> Opps!!</span>
+    </h2>
+    <p>O Computador Sorteiou (7) e voçê jogou (9)</p>
+  </div>
+
+  <script src="js/App.js"></script>
+  <script src="libs/icons.js"></script>
+</body>
+</html>
